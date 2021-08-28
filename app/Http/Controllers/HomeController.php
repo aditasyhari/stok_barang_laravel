@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $stok_barangs = DB::table('stok_barangs')->orderBy('tanggal','desc')->get();
+        $stok_barangs = DB::table('stok_barangs')->orderBy('updated_at','desc')->get();
         return view('/stok/stok_barang',['stok_barangs' => $stok_barangs]);
         //return view('home');
     }

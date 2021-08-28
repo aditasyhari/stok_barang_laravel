@@ -14,14 +14,33 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $barang_expired = BarangMasuk::where('tanggal_expired', '<', Carbon::now())->get();
         $stok_barangs = stok_barang::all();
         $count = stok_barang::count();
         $total = stok_barang::sum('jumlah_barang');
         $pembelians = Pembelian::orderBy('id', 'desc')->get();
-        $barang_masuk = BarangMasuk::orderBy('created_at', 'desc')->get();
+        $barang_masuk = BarangMasuk::orderBy('tanggal_masuk', 'desc')->get();
 
         return view('/dashboard/dashboard', compact(['pembelians','stok_barangs','count','total','barang_masuk']));   
     }
 
+    public function chartStok() 
+    {
+        $stok = stok_barang::all();
+
+        $data = [];
+
+        foreach($stok as $s){
+            $barang_keluar = Pembelian::where('kode_barang', $s->kode_barang)->get();
+
+            if($barang_keluar->count() > 0) {
+                $keluar = $barang_keluar->sum('jumlah');
+            } else {
+                $keluar = 0;
+            }
+            
+            $data[] = [$s->nama_barang, $keluar];
+        }
+
+        return view('dashboard.stok-chart', compact(['data']));
+    }
 }

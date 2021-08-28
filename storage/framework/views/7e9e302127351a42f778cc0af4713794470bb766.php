@@ -127,7 +127,7 @@
 	</center>
       </div>
 
-      <table border="1" cellspacing="0" cellpadding="0">
+      <table border="0" cellspacing="0" cellpadding="0">
         <thead>
           <tr>
 		  		<th>Kode Barang</th>

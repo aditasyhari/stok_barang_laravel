@@ -57,6 +57,7 @@ tr:nth-child(even) {
     <h1>Data Transaksi Barang<img align="right" src="https://i.ibb.co/DpbskFt/Ud-Wangi-Agung.png" alt="Ud-Wangi-Agung" border="0" width="200" height="80"></h1>
     
     <button class="btn btn-primary mt-3 mb-3" onclick="" data-toggle="modal" data-target="#tambahModal">Tambah Stok</button>
+    <a class="btn btn-info mt-3 mb-3" href="{{route('chartStok')}}">Chart Stok</a>
     
     <P class="font-weight-bold"> Total Barang : {{$count}} </P>
     <p class="font-weight-bold" id="jumlah_keseluruhan"> Jumlah Keseluruhan Barang :  {{ number_format($total,0,',','.') }} Kg</p>
@@ -109,7 +110,7 @@ tr:nth-child(even) {
 <div class="row">
     <!-- Barang Masuk -->
     <div class="column">
-    <h2 class="mt-2">Barang Masuk</h2>
+    <h2 class="mt-2">Barang Masuk</h2><hr>
     
     <table id="table" class="table table-hover">
         <div class="d-flex justify-content-between">
@@ -161,7 +162,7 @@ tr:nth-child(even) {
     </div>
     <!-- Barang Keluar -->
     <div class="column">
-    <h2 class="mt-2" >Barang Keluar <span color="red"><i class="fas fa-caret-square-up"></span></i></h2>
+    <h2 class="mt-2" >Barang Keluar</h2><hr>
 
     <table id="table1" class="table table-hover">
         <div class="d-flex justify-content-between">

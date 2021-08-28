@@ -36,6 +36,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Dashboard
 Route::get('/dashboard/dashboard', 'DashboardController@index');
 Route::post('/dashboard/dashboard/tambah-stok', 'BarangMasukController@store')->name('tambahStok');
+Route::get('/dashboard/dashboard/chart-stok', 'DashboardController@chartStok')->name('chartStok');
 
 //Stok Barang
 Route::get('/stok/stok_barang', 'StokController@index');
