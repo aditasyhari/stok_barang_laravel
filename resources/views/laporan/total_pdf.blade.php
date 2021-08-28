@@ -171,7 +171,7 @@
 		<h3><b><span id="total"></span></b></h3>
       <div id="notices">
         <div>Perhatian:</div>
-        <div class="notice">Laporan ini melampirkan semua data barang dan diurutkan sesuai tanggal terbaru.</div>
+        <div class="notice">Laporan ini melampirkan semua stok barang.</div>
       </div>
     </main>
     <footer>
@@ -181,16 +181,5 @@
 </html>
 
 @section('js')
-
-<script>
-		var total = 0;
-		var table = document.getElementById("total");
-		for(var t = 1; t < table.rows.length; t++)
-		{
-			total = total + parseInt(table.rows[t].cells[5].innerHTML);
-		}
-		document.getElementById("total").innerHTML = "Jumlah Stok = "+ total;
-
-</script>
 
 @endsection

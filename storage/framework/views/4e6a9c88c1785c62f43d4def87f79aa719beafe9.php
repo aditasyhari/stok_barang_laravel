@@ -40,6 +40,7 @@ Data Pembeli
             <td><?php echo e($pembeli->alamat_pembeli); ?></td>
             <td><?php echo e($pembeli->nomor_hp); ?></td>
             <td><?php echo e($pembeli->email_pembeli); ?></td>
+            <td><?php echo e($pembeli->kode_pembeli); ?></td>
         <td>
         <a href="/keuangan/<?php echo e($pembeli->id); ?>/riwayat" class="btn btn-success btn-sm">Riwayat</a>
         </td>

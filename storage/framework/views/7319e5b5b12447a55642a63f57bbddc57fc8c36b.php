@@ -154,7 +154,7 @@
       <div id="notices">
         <div>Perhatian:</div>
         
-        <div class="notice">Laporan ini melampirkan semua data barang dan diurutkan sesuai tanggal terbaru.</div>
+        <div class="notice">Laporan ini melampirkan semua data barang.</div>
       </div>
     </main>
     <footer>

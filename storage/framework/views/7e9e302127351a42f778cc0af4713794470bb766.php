@@ -173,7 +173,7 @@
 		<h3><b><span id="total"></span></b></h3>
       <div id="notices">
         <div>Perhatian:</div>
-        <div class="notice">Laporan ini melampirkan semua data barang dan diurutkan sesuai tanggal terbaru.</div>
+        <div class="notice">Laporan ini melampirkan semua stok barang.</div>
       </div>
     </main>
     <footer>
