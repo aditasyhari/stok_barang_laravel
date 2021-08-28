@@ -30,4 +30,4 @@ List Revisi
 4. Tambah stok di dashboard (done)
 6. Tanggal expired headlight (done)
 3. Cetak laporan stok barang (done)
-7. Tampilan Barang apa yang paling banyak di beli dan yang kurang diminati
+7. Tampilan Barang apa yang paling banyak di beli dan yang kurang diminati (done)
